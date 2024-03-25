@@ -66,13 +66,18 @@
 											<h3>Carlos Curbelo</h3><br>
 										</header>
 										<p>Carlos Luis Curbelo was a Republican Congressman representing Florida's 26th congressional district from 2015 to 2019. He has worked to advance bipartisan solutions to climate change that simultaneously empower economic growth and coastal communities.</p>
-									<center><div class="rsvpbox">
-										
+									<center>
+
 
 <center>
+<button onclick="rsvpfunction()">RSVP For Our April 18th Speaker Event With Congressman Curbelo</button>
+
+<div id="rsvpbox" style="display:none;">
   <form
   action="https://formspree.io/f/xrgnanew"
   method="POST">
+  <br>
+  <br>
   <label>
   <b>Your Name</b>
     <br><input type="text" name="message" required>
@@ -91,6 +96,40 @@
   <br><br>
   <button type="submit">Send</button>
 </form>
+
+<style> 
+input {
+  margin-top: 5px;
+  border-style: solid;
+  border-color: black;
+  border-width: 4px;
+}
+
+input:hover {
+  border-color: 
+}
+
+textarea {
+  margin-top: 5px;
+  border-style: solid;
+  border-color: black;
+  border-width: 4px;  
+}
+
+</style>
+</div>
+
+<script>
+function rsvpfunction() {
+  var x = document.getElementById("rsvpbox");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+</center>
 </center>
 
 <style> 
@@ -251,10 +290,6 @@ textarea {
 		max-width: 300px;
 		background-color: transparent;
 		float: center;
-	}
-	.rsvpbox { 
-		min-width: 500px;
-		max-width: 50vw;
 	}
 		</style>
 	</body>
